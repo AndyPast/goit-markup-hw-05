@@ -28,7 +28,7 @@
 
         <ul class="site-nav list">
           <li class="item">
-            <a href="./index.html" class="link current studio">Студія</a>
+            <a href="./index.html" class="link current">Студія</a>
           </li>
           <li class="item">
             <a href="./portfolio.html" class="link current">Портфолио</a>
@@ -69,7 +69,7 @@
       <div class="box-text">
         <h1 class="text">Ефективні рішення для вашого бізнесу</h1>
         <div lass="hero-button">
-        <a href="button" class="button-one">Замовити послугу</a>
+        <button class="button-one" data-modal-open>Замовити послугу</button>
        </div>
       </div>
      </section>
@@ -120,14 +120,23 @@
       <h2 class="text-main">Чим ми займаємося</h2>
       <ul class="list-item">
         <li>
-          <img src="./images/работа за ноутом.jpg" alt="Смартфон" width="370" " />
+          <div class="works-images">
+          <img src="./images/работа за ноутом.jpg" alt="Смартфон" width="370"/>
+          <p class="works-images-text">Десктопні додатки</p>
+          </div>
         </li>
         <li>
+          <div class="works-images">
           <img src="./images/смартфон.jpg" alt="Смартфон" width="370" " />
+          <p class="works-images-text">Мобільні додатки</p>
+        </div>
         </li>
         <li>
+          <div class="works-images">
           <img src="./images/планшет.jpg" alt="Планшет" width="370" " />
-        </li>
+          <p class="works-images-text">Дизайнерські рішення</p>
+        </div>
+       </li>
       </ul>
       </div>
     </section>
@@ -432,6 +441,28 @@
   </footer> 
 </body>
 </html>
+
+
+<!-- Модальное окно -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    
+    <button class="modal__close" data-modal-close>
+      <svg class="close__icon" width="11" height="11">
+        <use href="./images/symbol-defs.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <form class="form"></form>
+
+  </div>
+ </div>
+ <script src="./modal.js"></script>
+</body>
+
+</html>
+
 
 
 
